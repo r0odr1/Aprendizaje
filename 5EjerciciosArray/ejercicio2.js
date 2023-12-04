@@ -27,7 +27,7 @@ function differenceInAges(age) {
 }
 console.log(differenceInAges([1, 3, 2, 4])); // 3
 console.log(differenceInAges([10, 9, 8, 7, 6, 5, 4])); // 10
-co; /*
+/*
 En la reunión familiar anual, a la familia le gusta encontrar la edad del miembro vivo de mayor edad y la edad del miembro de la familia más joven
 y calcular la diferencia entre ellos.
 
