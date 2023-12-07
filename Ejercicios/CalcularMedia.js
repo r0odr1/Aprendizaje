@@ -8,3 +8,4 @@ function calcularMedia (numeros) {
 }
 
 console.log(calcularMedia([1, 2, 3, 4, 5]));
+console.log(calcularMedia([6, 2, 9, 4, 15]));
