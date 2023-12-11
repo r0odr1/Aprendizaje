@@ -21,14 +21,33 @@
 
 // console.log(contarVotos());
 
-function invertirCadena(cadena) {
-  return cadena.split("").reverse().join("");
+
+// function sumar (numeros){
+//   let suma = 0
+
+//   for (let i = 0; i < numeros.length; i++){
+//     suma += numeros[i]
+//   }
+//   return suma
+// }
+
+//console.log(sumar([1, 2]));
+// let suma = 0
+// for (i = 0; i <= 100; i++) {
+//   suma = suma + i
+// }
+
+// console.log(suma);
+
+function invertirCadena (cadena) {
+  return cadena.split('').reverse().join('')
 }
 
-function esPalindromo(cadena) {
-  let cadenaReversa = invertirCadena(cadena);
-  return cadena === cadenaReversa;
+function palindromo (palabra) {
+  let esPali = invertirCadena(palabra)
+
+  return palabra === esPali
 }
 
-console.log(invertirCadena("hola"));
-console.log(esPalindromo("radar"));
+console.log(palindromo("hola"));
+console.log(palindromo("ana"));
