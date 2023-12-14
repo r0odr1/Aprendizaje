@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos en Js</title>
+    <style>
+      #caja {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="caja"></div>
+    <button id="boton">Cambiar color</button>
+
+    <script>
+      var caja = document.getElementById("caja");
+      var boton = document.getElementById("boton");
+      boton.onclick = function () {
+        caja.style.backgroundColor = "red";
+      };
+
+      var elemento = document.getElementById("boton");
+      elemento.onmouseover = function () {
+        elemento.style.backgroundColor = "yellow";
+      };
+      elemento.onmouseout = function () {
+        elemento.style.backgroundColor = "white";
+      };
+    </script>
+  </body>
+</html>

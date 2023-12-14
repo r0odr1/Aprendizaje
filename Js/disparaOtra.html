@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento de Teclado</title>
+  </head>
+  <body>
+    <input type="text" id="inputA" placeholder="Número A" />
+    <input type="text" id="inputB" placeholder="Número B" />
+    <button id="miBoton">Haz clic o presiona Enter</button>
+
+    <script>
+      // Definir la función suma
+      function suma(a, b) {
+        let total = a + b;
+        return total;
+      }
+
+      // Obtener los elementos de entrada y el botón por sus IDs
+      var inputA = document.getElementById("inputA");
+      var inputB = document.getElementById("inputB");
+      var boton = document.getElementById("miBoton");
+
+      // Agregar un escuchador de eventos al botón
+      boton.addEventListener("click", function () {
+        // Llamar a la función suma con los valores de los campos de entrada
+        var resultado = suma(Number(inputA.value), Number(inputB.value));
+
+        // Mostrar el resultado en la consola
+        console.log(resultado);
+      });
+
+      // Agregar un escuchador de eventos de teclado a los campos de entrada
+      inputA.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+          // Llamar a la función suma con los valores de los campos de entrada
+          var resultado = suma(Number(inputA.value), Number(inputB.value));
+
+          // Mostrar el resultado en la consola
+          console.log(resultado);
+        }
+      });
+
+      inputB.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+          // Llamar a la función suma con los valores de los campos de entrada
+          var resultado = suma(Number(inputA.value), Number(inputB.value));
+
+          // Mostrar el resultado en la consola
+          console.log(resultado);
+        }
+      });
+    </script>
+  </body>
+</html>
